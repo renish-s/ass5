@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GuestMaster.Master.cs" Inherits="ASGSSTN004_2_.Guest.guestMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+       <style>
+
+        nav{
+    background-color:forestgreen;
+    height:50px;
+}
+nav ul{
+    text-align:center;
+   
+}
+    nav li {
+        display: inline-block;
+        margin-top: 1%;
+    }
+
+nav li a{
+    color:black;
+    text-decoration:none; 
+    padding:0px 60px;
+   
+}
+
+nav li a:hover{
+    color:red;
+    transition:all 0.4S ;
+
+}
+
+footer{
+     background-color:forestgreen;
+    height:100px;
+    margin-top:250px;
+}
+footer p {
+    color:black;
+    text-align:center;
+  
+}
+
+footer p a {
+    color:darkblue;
+}
+    </style>
+
+     <nav>
+                    <ul>
+                         <li><a href="Guest.aspx">Home</a></li>
+                        
+                        <li><a href="../Guest/Login.aspx">Log-In</a></li>
+                           <li><a href="../Guest/UserReg.aspx">Registration</a></li>
+                       
+                    </ul>
+
+            </nav>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer >
+                  
+             <p>© 2022 Registration. All rights reserved | Designed by <a href="#">Renish S(Nest Digital)</a></p>
+
+            </footer>
+    </form>
+</body>
+</html>
